@@ -4,7 +4,7 @@
 #
 Name     : pypi-types_docutils
 Version  : 0.19.1.1
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/6a/5c/b231a40dab63d06994a7cacebc1da5011b56711c1a9b25365cdb74c40efb/types-docutils-0.19.1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6a/5c/b231a40dab63d06994a7cacebc1da5011b56711c1a9b25365cdb74c40efb/types-docutils-0.19.1.1.tar.gz
 Summary  : Typing stubs for docutils
@@ -51,7 +51,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1673022861
+export SOURCE_DATE_EPOCH=1673374119
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
