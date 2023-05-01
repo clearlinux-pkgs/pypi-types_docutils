@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-types_docutils
-Version  : 0.19.1.7
-Release  : 11
-URL      : https://files.pythonhosted.org/packages/d4/d1/eb1e04486244ab59079fa586796fa790613eae89bbfe8f77313c88b6d9e1/types-docutils-0.19.1.7.tar.gz
-Source0  : https://files.pythonhosted.org/packages/d4/d1/eb1e04486244ab59079fa586796fa790613eae89bbfe8f77313c88b6d9e1/types-docutils-0.19.1.7.tar.gz
+Version  : 0.19.1.8
+Release  : 12
+URL      : https://files.pythonhosted.org/packages/59/3b/3f08a5fd5ad9aedf7bad0e67f7029cddfca14bcc27b431a9238ad8a5dd37/types-docutils-0.19.1.8.tar.gz
+Source0  : https://files.pythonhosted.org/packages/59/3b/3f08a5fd5ad9aedf7bad0e67f7029cddfca14bcc27b431a9238ad8a5dd37/types-docutils-0.19.1.8.tar.gz
 Summary  : Typing stubs for docutils
 Group    : Development/Tools
 License  : Apache-2.0
@@ -41,10 +41,10 @@ python3 components for the pypi-types_docutils package.
 
 
 %prep
-%setup -q -n types-docutils-0.19.1.7
-cd %{_builddir}/types-docutils-0.19.1.7
+%setup -q -n types-docutils-0.19.1.8
+cd %{_builddir}/types-docutils-0.19.1.8
 pushd ..
-cp -a types-docutils-0.19.1.7 buildavx2
+cp -a types-docutils-0.19.1.8 buildavx2
 popd
 
 %build
@@ -52,15 +52,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679956935
+export SOURCE_DATE_EPOCH=1682975425
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
