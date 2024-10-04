@@ -1,5 +1,5 @@
 PKG_NAME := pypi-types_docutils
-URL = https://files.pythonhosted.org/packages/e8/d1/29a516f8f42540a65dfa18df0dbf05e669554f09fa002bf9e07c896db9a2/types-docutils-0.21.0.20240907.tar.gz
+URL = https://files.pythonhosted.org/packages/0f/41/726f3e7ef00e21a190d25ca9ead27ca120dc5b09f5e714be9f5408feb9d2/types-docutils-0.21.0.20241004.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
