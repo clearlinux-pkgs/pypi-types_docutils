@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-types_docutils
-Version  : 0.21.0.20241004
-Release  : 41
-URL      : https://files.pythonhosted.org/packages/0f/41/726f3e7ef00e21a190d25ca9ead27ca120dc5b09f5e714be9f5408feb9d2/types-docutils-0.21.0.20241004.tar.gz
-Source0  : https://files.pythonhosted.org/packages/0f/41/726f3e7ef00e21a190d25ca9ead27ca120dc5b09f5e714be9f5408feb9d2/types-docutils-0.21.0.20241004.tar.gz
+Version  : 0.21.0.20241005
+Release  : 42
+URL      : https://files.pythonhosted.org/packages/23/31/6f51a6b05ad750fd7875ffd45e7a88063258782f35e5dff1f291061e394e/types-docutils-0.21.0.20241005.tar.gz
+Source0  : https://files.pythonhosted.org/packages/23/31/6f51a6b05ad750fd7875ffd45e7a88063258782f35e5dff1f291061e394e/types-docutils-0.21.0.20241005.tar.gz
 Summary  : Typing stubs for docutils
 Group    : Development/Tools
 License  : Apache-2.0
@@ -43,10 +43,10 @@ python3 components for the pypi-types_docutils package.
 
 
 %prep
-%setup -q -n types-docutils-0.21.0.20241004
-cd %{_builddir}/types-docutils-0.21.0.20241004
+%setup -q -n types-docutils-0.21.0.20241005
+cd %{_builddir}/types-docutils-0.21.0.20241005
 pushd ..
-cp -a types-docutils-0.21.0.20241004 buildavx2
+cp -a types-docutils-0.21.0.20241005 buildavx2
 popd
 
 %build
@@ -54,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1728052965
+export SOURCE_DATE_EPOCH=1728429189
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
