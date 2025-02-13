@@ -7,7 +7,7 @@
 #
 Name     : pypi-types_docutils
 Version  : 0.21.0.20241128
-Release  : 44
+Release  : 45
 URL      : https://files.pythonhosted.org/packages/dd/df/64e7ab01a4fc5ce46895dc94e31cffc8b8087c8d91ee54c45ac2d8d82445/types_docutils-0.21.0.20241128.tar.gz
 Source0  : https://files.pythonhosted.org/packages/dd/df/64e7ab01a4fc5ce46895dc94e31cffc8b8087c8d91ee54c45ac2d8d82445/types_docutils-0.21.0.20241128.tar.gz
 Summary  : Typing stubs for docutils
